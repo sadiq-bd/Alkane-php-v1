@@ -3,7 +3,7 @@
 
 # Basic Usages
 
-HTML Page render
+    # HTML Page render
     $layout = new Alkane\HtmlPageLayout\HtmlPageLayout();
     $layout->setTitle('Alkane PHP');
     $layout->setDescription('App Description');
@@ -19,7 +19,7 @@ HTML Page render
     ]);
     $layout->render();
 
-Router
+    # Router
     Alkane\Router\Router::get('/', 'app/index.php');
     Alkane\Router\Router::get('/user/{id}', 'app/index.php');
 
@@ -44,7 +44,7 @@ Router
         **************************/
     **********************************************************/
 
-Database
+    # Database
     $dbInstance = Database::getInstance(); // or > new Database($custom_connection_name);
     $sql = new SqlQuery($dbInstance);
     $sql->select([      // or > $sql->select() // for * all
@@ -72,7 +72,7 @@ Database
     print_r($crud->read($id));
 
 
-Session
+    # Session
     Alkane\SessionControler\SessionControler::set('mail/smtp/host', 'smtp.gmail.com');
     Alkane\SessionControler\SessionControler::set('mail/smtp/user', 'user@gmail.com');
     Alkane\SessionControler\SessionControler::set('mail/smtp/password', '6456g654d26gv624');
