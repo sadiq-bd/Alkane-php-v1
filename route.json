@@ -1,0 +1,32 @@
+{
+    "file" : {
+        "#_route_name" : "#_route_file_location",
+
+        "/" : "app/index.php",
+        "/login" : "app/index.php",
+        "/logout/{logout}" : "app/index.php",
+        "/dashboard" : "app/main.php",
+        "/notes" : "app/main.php",
+        "/notes/search/{noteTitle}" : "app/main.php",
+        "/notes/page/{pageNo}" : "app/main.php",
+        "/notes/view/{noteId}" : "app/main.php",
+        "/notes/edit/{noteId}" : "app/main.php",
+        "/profile" : "app/main.php",
+        "/profile/update" : "app/main.php",
+        "/settings" : "app/main.php",   
+        "/more" : "app/main.php",   
+        "/google/auth" : "app/index.php",
+        "/google/auth/callback" : "app/index.php"
+
+    } ,
+    "folder" : {
+        "#_prefix": "#_dir",
+
+        "resource" : "app/resource"
+
+    } ,
+    "redirect": {
+        "#_route_name" : "#_redirect_location"
+
+    }
+}
