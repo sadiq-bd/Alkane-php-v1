@@ -45,8 +45,8 @@
     **********************************************************/
 
     # Database
-    $dbInstance = Database::getInstance(); // or > new Database($custom_connection_name);
-    $sql = new SqlQuery($dbInstance);
+    $dbInstance = Alkane\Database\Database::getInstance(); // or > new Alkane\Database\Database($custom_connection_name);
+    $sql = new Alkane\SqlQuery\SqlQuery($dbInstance);
     $sql->select([      // or > $sql->select() // for * all
             'ID',
             'name',
@@ -57,7 +57,7 @@
             'id' => 20
         ]);
     $result = $sql->exec();
-    print_r($result->fetch(SqlQuery::FETCH_ASSOC));
+    print_r($result->fetch(Alkane\SqlQuery\SqlQuery::FETCH_ASSOC));
 
     ----------------------- or ----------------------------
     --------------- Using Crud Controler ------------------
