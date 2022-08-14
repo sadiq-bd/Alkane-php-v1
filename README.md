@@ -78,7 +78,7 @@
     Alkane\SessionControler\SessionControler::set('mail/smtp/password', '6456g654d26gv624');
 
     // get data back
-    print_r(SessionControler::get('mail/smtp'));
+    print_r(Alkane\SessionControler\SessionControler::get('mail/smtp'));
     /* ^^^^^^^^^^^ result ^^^^^^^^^^^^
         Array (
             [host] => smtp.gmail.com
